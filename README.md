@@ -13,6 +13,7 @@ This repository is maintained by **WebPrims** for students and developers who wa
 - Sending system and user prompts
 - Using structured JSON-style outputs
 - Streaming model responses
+- Maintaining conversation memory
 - Keeping AI experiments private and local
 
 ## Repository structure
@@ -25,6 +26,7 @@ local-llm-examples/
 ├── 04-system-prompts/
 ├── 05-structured-output/
 ├── 06-streaming/
+├── 07-conversation-memory/
 └── requirements.txt
 ```
 
@@ -52,9 +54,17 @@ Install Python dependencies:
 pip install -r requirements.txt
 ```
 
+## Conversation memory example
+
+The `07-conversation-memory/chat_with_memory.py` example uses Ollama's chat endpoint and keeps previous user/assistant messages in memory so follow-up questions retain context.
+
+```bash
+python 07-conversation-memory/chat_with_memory.py
+```
+
 ## Learning approach
 
-Start with the command-line examples first. Once you understand how a model runs locally, move to the Python API examples and then build the chatbot and structured-output examples.
+Start with the command-line examples first. Once you understand how a model runs locally, move to the Python API examples and then build the chatbot, structured-output, streaming, and memory examples.
 
 Try changing models, prompts, temperatures, and response formats. The goal is to understand the workflow rather than just copy code.
 
